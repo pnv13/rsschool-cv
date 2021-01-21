@@ -30,7 +30,7 @@ No work experience anywhere
 
 # Education
 
-Higher education in BSUIR
+Higher education in BSUIR, Minsk.
 
 # English
 
