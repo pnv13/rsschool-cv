@@ -7,6 +7,25 @@ $head-color: #196ab6;
   padding: 0;
   box-sizing: border-box;
   color: $main-color;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-left: 20px;
 }
 
 body {
@@ -15,9 +34,9 @@ body {
 
 .cv {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   width: 50%;
-  margin: 0 25%;
+  margin: 5vh 25%;
   background-color: $secondary-color;
 
   .cv__left {
@@ -38,6 +57,7 @@ body {
     .cv__content {
       height: 100%;
       background-color: $head-color;
+      padding: 20px;
     }
   }
 

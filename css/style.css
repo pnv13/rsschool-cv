@@ -4,6 +4,25 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: black;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-left: 20px;
 }
 
 body {
@@ -14,9 +33,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 90vh;
   width: 50%;
-  margin: 0 25%;
+  margin: 5vh 25%;
   background-color: white;
 }
 
@@ -44,6 +63,7 @@ body {
 .cv .cv__left .cv__content {
   height: 100%;
   background-color: #196ab6;
+  padding: 20px;
 }
 
 .cv .cv__right {
