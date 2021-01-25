@@ -76,3 +76,43 @@ body {
           flex-direction: column;
   width: 60%;
 }
+
+.cv .cv__right h5 {
+  color: #2390f5;
+}
+
+.cv .cv__right .cv__head {
+  padding: 20px;
+}
+
+.cv .cv__right .cv__head .firstName {
+  font-size: 2.7em;
+  color: #196ab6;
+  text-transform: uppercase;
+}
+
+.cv .cv__right .cv__head .lastName {
+  font-size: 1.9em;
+  color: #2390f5;
+  text-transform: uppercase;
+}
+
+.cv .cv__right .cv__head .specialty {
+  font-size: 1.1em;
+}
+
+.cv .cv__right .cv__about {
+  padding: 0 20px;
+}
+
+.cv .cv__right .cv__experience {
+  padding: 20px 20px 0 20px;
+}
+
+.cv .cv__right .cv__education {
+  padding: 20px 20px 0 20px;
+}
+
+.cv .cv__right .cv__english {
+  padding: 20px 20px 0 20px;
+}
