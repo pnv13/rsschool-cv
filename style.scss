@@ -1,0 +1,108 @@
+$main-color: black;
+$secondary-color: white;
+$head-color: #196ab6;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $main-color;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-left: 20px;
+}
+
+body {
+  background-color: rgb(180, 178, 178);
+}
+
+.cv {
+  display: flex;
+  height: 90vh;
+  width: 50%;
+  margin: 5vh 25%;
+  background-color: $secondary-color;
+
+  .cv__left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    .cv__image {
+      width: 100%;
+      height: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .cv__content {
+      height: 100%;
+      background-color: $head-color;
+      padding: 20px;
+    }
+  }
+
+  .cv__right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    h5 {
+      color: #2390f5;
+    }
+
+    .cv__head {
+      padding: 20px;
+      .firstName {
+        font-size: 2.7em;
+        color: $head-color;
+        text-transform: uppercase;
+      }
+
+      .lastName {
+        font-size: 1.9em;
+        color: #2390f5;
+        text-transform: uppercase;
+      }
+
+      .specialty {
+        font-size: 1.1em;
+      }
+    }
+
+    .cv__about {
+      padding: 0 20px;
+    }
+
+    .cv__experience {
+      padding: 20px 20px 0 20px;
+    }
+
+    .cv__education {
+      padding: 20px 20px 0 20px;
+    }
+
+    .cv__english {
+      padding: 20px 20px 0 20px;
+    }
+  }
+}
