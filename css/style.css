@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: black;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 ul {
@@ -77,13 +77,15 @@ body {
   margin: 0 0 10px 0;
 }
 
-.cv .content {
+.cv .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 60vh;
+  border: 2px solid blue;
 }
 
-.cv .content .cv__left {
+.cv .main .aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,13 +96,13 @@ body {
   width: 40%;
 }
 
-.cv .content .cv__left .cv__content {
-  height: 100%;
+.cv .main .aside .section {
+  height: 30vh;
   background-color: #196ab6;
   padding: 20px 20px 0 20px;
 }
 
-.cv .content .cv__right {
+.cv .main .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,22 +113,30 @@ body {
   width: 60%;
 }
 
-.cv .content .cv__right h5 {
+.cv .main .content h5 {
   color: #2390f5;
 }
 
-.cv .content .cv__right .cv__about {
-  padding: 0 20px;
-}
-
-.cv .content .cv__right .cv__experience {
+.cv .main .content .content__about {
   padding: 20px 20px 0 20px;
 }
 
-.cv .content .cv__right .cv__education {
+.cv .main .content .content__experience {
   padding: 20px 20px 0 20px;
 }
 
-.cv .content .cv__right .cv__english {
+.cv .main .content .content__education {
   padding: 20px 20px 0 20px;
+}
+
+.cv .main .content .content__english {
+  padding: 20px 20px 0 20px;
+}
+
+.cv .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  border: 2px solid green;
 }
