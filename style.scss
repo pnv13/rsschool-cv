@@ -3,106 +3,147 @@ $secondary-color: white;
 $head-color: #196ab6;
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: $main-color;
-  font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $main-color;
+    font-size: 1em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: white;
-  text-transform: uppercase;
+a {
+    text-decoration: none;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 li {
-  margin-left: 20px;
+    margin: 10px;
 }
 
 body {
-  background-color: rgb(180, 178, 178);
+    background-color: rgb(180, 178, 178);
 }
 
 .cv {
-  display: flex;
-  height: 90vh;
-  width: 50%;
-  margin: 5vh 25%;
-  background-color: $secondary-color;
-
-  .cv__left {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    height: 90vh;
+    width: 50%;
+    margin: 5vh auto;
+    background-color: $secondary-color;
 
-    .cv__image {
-      width: 100%;
-      height: 50%;
+    .header {
+        display: flex;
+        height: 20vh;
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
+        .userpic {
+            width: 40%;
+            background: url(/photoCV.jpg) no-repeat center center / cover;
+        }
+
+        .header-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding-left: 20px;
+            width: 60%;
+
+            h1 {
+                font-size: 2.5em;
+                text-transform: uppercase;
+                color: $head-color;
+            }
+
+            h3 {
+                font-size: 1.7em;
+                text-transform: uppercase;
+                color: #2390f5;
+                margin: 0 0 10px 0;
+            }
+        }
     }
 
-    .cv__content {
-      height: 100%;
-      background-color: $head-color;
-      padding: 20px;
+    .main {
+        display: flex;
+        height: 60vh;
+
+        .aside {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+
+            h5 {
+                color: $secondary-color;
+            }
+
+            #contacts {
+                li {
+                    list-style-type: circle;
+
+                    a:hover {
+                        background: #1972c5;
+                    }
+                }
+            }
+
+            .section {
+                height: 30vh;
+                background-color: #2390f5;
+                padding: 20px 20px 0 20px;
+
+                .interests {
+                    ul {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            background: url(https://i.pinimg.com/originals/38/8a/f1/388af197023556ffc1aa742411f14460.png)
+                no-repeat center center / cover;
+
+            h5 {
+                color: #2390f5;
+            }
+
+            .content__about {
+                padding: 20px 20px 0 20px;
+            }
+
+            .content__experience {
+                padding: 20px 20px 0 20px;
+            }
+
+            .content__education {
+                padding: 20px 20px 0 20px;
+            }
+
+            .content__english {
+                padding: 20px 20px 0 20px;
+            }
+        }
     }
-  }
 
-  .cv__right {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+    .footer {
+        display: flex;
+        height: 10vh;
 
-    h5 {
-      color: #2390f5;
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+
+            li {
+                height: 4vh;
+            }
+        }
     }
-
-    .cv__head {
-      padding: 20px;
-      .firstName {
-        font-size: 2.7em;
-        color: $head-color;
-        text-transform: uppercase;
-      }
-
-      .lastName {
-        font-size: 1.9em;
-        color: #2390f5;
-        text-transform: uppercase;
-      }
-
-      .specialty {
-        font-size: 1.1em;
-      }
-    }
-
-    .cv__about {
-      padding: 0 20px;
-    }
-
-    .cv__experience {
-      padding: 20px 20px 0 20px;
-    }
-
-    .cv__education {
-      padding: 20px 20px 0 20px;
-    }
-
-    .cv__english {
-      padding: 20px 20px 0 20px;
-    }
-  }
 }
