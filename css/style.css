@@ -46,7 +46,7 @@ body {
 
 .cv .header .userpic {
   width: 40%;
-  background: url(/photoCV.jpg) no-repeat center center/cover;
+  background: url(../photoCV.jpg) no-repeat center center/cover;
 }
 
 .cv .header .header-title {
